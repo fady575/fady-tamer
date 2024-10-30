@@ -1,0 +1,98 @@
+body {
+    position: relative;
+    margin: 0;
+    background-color: rgb(116, 116, 116);
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('path/to/your/image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1; /* يجعل الطبقة تحت المحتوى */
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* طبقة مظلمة */
+    position: relative; /* لتكون الطبقة فوق الصورة */
+    z-index: 0; /* لتكون فوق الصورة */
+}
+
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* طبقة مظلمة */
+    position: relative; /* لتكون الطبقة فوق الصورة */
+    z-index: 0; /* لتكون فوق الصورة */
+}
+
+
+.m {
+    width: 90%;
+    height: 20px;
+    background-color: rgb(2, 26, 24);
+    color: beige ;
+    border-radius: 70px;
+    padding: 100px;
+     
+    
+}
+a {
+    float: right; 
+    margin-left: 20px;
+    
+}
+h1{
+    text-align:center; 
+    margin: -6px;
+}
+h2 {
+    text-align:center; 
+
+}
+.imgg {
+    display: flex;
+    flex-wrap: wrap; /* يسمح للصور بالانتقال إلى الصف التالي */
+    justify-content: flex-start; /* البدء من اليسار */
+}
+
+.imgg img {
+    margin-right: 10px; /* مسافة بين الصور */
+    margin-bottom: 10px; /* مسافة بين الصفوف */
+    width: 200px; /* عرض ثابت لكل صورة */
+    height: auto; /* للحفاظ على نسبة العرض إلى الارتفاع */
+}
+
+.imgg img:last-child {
+    margin-right: 0; /* إزالة المسافة عن آخر صورة في الصف */
+}
+img {
+    width: 200px; /* عرض الصورة */
+    height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* إضافة تأثير انتقال سلس */
+}
+
+img:hover {
+    transform: translateY(-10px) scale(1.05); /* تحريك الصورة لأعلى بمقدار 10 بكسل وتكبيرها قليلاً */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* إضافة ظل للصورة */
+}
+.s{
+    width: 90%;
+    height: 20px;
+    background-color: rgb(2, 26, 24);
+    color: beige ;
+    border-radius: 70px;
+    padding: 100px;
+     
+    
+}
+.ww{ 
+    float: right; 
+    margin-left: 70px;
+}
+
