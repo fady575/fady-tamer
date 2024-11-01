@@ -3,6 +3,10 @@ body {
     margin: 0;
     background-color: rgb(116, 116, 116);
 }
+@media (max-width: 768px) {
+  /* أنماط للهواتف */
+}
+
 
 body::before {
     content: '';
